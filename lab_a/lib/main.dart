@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lab 05 Lab A (Updated)',
+      title: 'Lab 05 - Navigation Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
@@ -75,7 +75,10 @@ class _MainScreenState extends State<MainScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.alarm), label: 'Alarm'),
-          BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Business'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Business',
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: 'School'),
         ],
       ),
